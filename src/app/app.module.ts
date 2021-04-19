@@ -4,10 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HeroeComponent } from './Heroes/heroe/heroe.component';
+import { ListadoComponent } from './Heroes/listado/listado.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+     HeroeComponent,
+     ListadoComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule
