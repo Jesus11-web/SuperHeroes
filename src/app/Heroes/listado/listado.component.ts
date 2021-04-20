@@ -9,5 +9,8 @@ export class ListadoComponent{
 
   heroes: string[] = ['hulk','saitama','superman','goku'];
   
+  removeItem(i: number){
+    this.heroes.splice(i, 1);
+  }
 
 }
