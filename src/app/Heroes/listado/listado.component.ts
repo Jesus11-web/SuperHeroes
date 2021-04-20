@@ -17,7 +17,5 @@ indice:number = 0;
     this.indice=this.indice+i;
     this.eliminar = this.heroes.splice(i,1);
 
-
   }
-
 }
