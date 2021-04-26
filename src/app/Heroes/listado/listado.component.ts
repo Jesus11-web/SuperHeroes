@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ListadoComponent{
 
   heroes: string[] = ['hulk','SAITAMA','SUPERMAN','goku'];
-eliminar: string[]  = []
+eliminar: string[] = []
 indice:number = 0;
   removeItem(i: number){
 
