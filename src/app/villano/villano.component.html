@@ -1,18 +1,17 @@
-<h2>Villanos</h2>
+<h2><font color='amarillo'>Listado de Villanos (DC \ MCUI)</font></h2>
 <ul class="villanos">
-<li *ngFor="let villano of villanos" [class.selected]="villano === selectedV
-illano" (click)="onSelect(villano)">
+<li *ngFor="let villano of villanos" [class.selected]="villano === selectedVillano" (click)="onSelect(villano)">
  <span class="badge">{{villano.id}}</span>{{villano.name}}
 </li>
 </ul>
 <div *ngIf="selectedVillano">
  <h2>
- {{selectedVillano.name | uppercase}} Detalles Modificados
+ {{selectedVillano.name | uppercase}}
  </h2>
  <ul class="villanos">
  <li>
  <label class="badge" for="villano-name">Nombre Villano</label>
- <span ></span>{{selectedVillano.name}}
+ <span></span>{{selectedVillano.name}}
  </li>
  </ul>
  <ul class="villanos">
@@ -27,7 +26,8 @@ illano" (click)="onSelect(villano)">
  <span >{{selectedVillano.nivel+numero}}</span>
  </li>
  </ul>
-<label for="hero-universo">Amentar - Disminuir Nivel de poder: </label>
- <button (click) = 'acumulador(base)'>+{{base}}</button>
- <input id="hero-universo" placeholder={{selectedVillano.nivel+numero}}>
- <button (click)='acumulador(-base)'>-{{base}}</button>
+<label for="hero-universo">Nivel de Poder: </label>
+<font color='verde'> Incrementar</font> <button (click) = 'acumulador(base)'>+{{base}}</button>
+<input id="hero-universo" placeholder={{selectedVillano.nivel+numero}}>
+<button (click)='acumulador(-base)'>-{{base}}</button> <font color='red'>Decrementar </font> 
+</div>
