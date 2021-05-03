@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { HeroesModule } from './Heroes/heroes.module';
 import { ContadorComponent } from './contador/contador.component';
 import { ContadorModule } from './Heroes/contador.module';
+import { VillanoComponent } from './villano/villano.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    VillanoComponent,
    
   ],
 
